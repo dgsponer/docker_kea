@@ -1,4 +1,4 @@
-FROM alpine:3.24
+FROM alpine:3.24.3
 RUN set -xe \
 	&& apk add --update --no-progress --no-cache kea-dhcp4 \
 	&& rm -rf /var/cache/apk/*
